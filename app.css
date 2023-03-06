@@ -1,0 +1,38 @@
+body {
+    color: #FFF;
+    background-color: rgb(30, 30, 30);
+}
+
+.saved-new-item {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: top;
+}
+
+.edit-item {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    justify-content: center;
+    align-items: top;
+}
+
+.show {
+    display: flex;
+    animation: fadeOut 1s;
+}
+
+@keyframes fadeOut {
+    100% { opacity: 1; }
+    0% { opacity: 0; }
+}

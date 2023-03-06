@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://www.melaleuca.com/assets/productstore/css/app.css?v-638126812103646866"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <script src="app.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="my-20 to-xl:mx-10">
+        <div class="o-widthControl mx-auto w-full max-w-full md:max-w-contain">
+          <h1 class="text-3xl font-bold">Shopping List</h1>
+          <p class="text-xl">Enter new items here</p>
+          <form action="" data-form-item>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="border-2 bg-gray mr-10 my-10"
+              data-item-value
+            /><button
+              type="submit"
+              class="border-2 border-blue bg-blue-175 text-white text-center text-base font-bold rounded-lg px-8"
+              data-button-item
+            >
+              Add new item
+            </button>
+            <button
+              type="submit"
+              class="border-2 border-green bg-green-150 text-white text-center text-base font-bold rounded-lg px-8"
+              edit-button-item
+            >
+              Edit
+            </button>
+            <button
+              type="submit"
+              class="border-2 border-blue bg-blue-175 text-white text-center text-base font-bold rounded-lg px-8 my-10 hidden"
+              cancel-button-item
+            >
+              Cancel
+            </button>
+            <button
+              type="submit"
+              class="border-2 border-red bg-red text-white text-center text-base font-bold rounded-lg px-8 my-10 hidden"
+              delete-button-item
+            >
+              Delete
+            </button>
+          </form>
+          <div class="py20">
+            <ul data-list-container></ul>
+          </div>
+        </div>
+      </div>
+      <div class="saved-new-item" data-show-class>
+        <div class="text-2xl px-10 bg-black border-1 mt-120 h-40 rounded-3xl">
+          Saved
+        </div>
+      </div>
+      <div class="edit-item" data-edit-item>
+        <form action="" class="mt-120">
+          <input
+            type="text"
+            name="edit-item-text"
+            id=""
+            placeholder="Edit"
+            class="border-2 bg-gray mr-10"
+            data-edit-value
+          />
+          <button
+            type="submit"
+            edit-item-button
+            class="border-2 border-blue bg-blue-175 text-white text-center text-base font-bold rounded-lg px-8"
+          >
+            Save
+          </button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
